@@ -154,6 +154,8 @@ pub mod pallet {
             // https://docs.substrate.io/main-docs/build/origins/
             let account_id = ensure_signed(origin)?;
 
+            log::info!("\n Input bytes --> {:#?}", encoded_bytes);
+
             // Split encoded bytes into side effects chunk bytes by provided delimeter
             let side_effects_bytes = Self::parse_side_effects(encoded_bytes.clone());
 
