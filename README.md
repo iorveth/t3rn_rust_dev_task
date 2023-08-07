@@ -1,12 +1,15 @@
     Side effect parameters bytes --> [
         [
+            2,
+        ],
+        [
             1,
         ],
         [
-            6,
+            7,
         ],
         [
-            60,
+            92,
             85,
             23,
             125,
@@ -40,7 +43,7 @@
             13,
         ],
         [
-            156,
+            60,
             85,
             23,
             125,
@@ -83,15 +86,22 @@
             161,
             32,
         ],
+        [
+            1,
+        ],
     ]
 
-    Side effect --> SingleChain {
-        chain: Polkadot,
+    Side effect --> MultiChain {
+        chain_from: Kusama,
+        chain_to: Polkadot,
         side_effect: SideEffect {
-            execution_type: Tran {
-                caller: 3c55177d67b064bb5d189a3e1ddad9bc6646e02e64d6e308f5acbb1533ac430d (5DRp1QQY...),
-                to: 9c55177d67b064bb5d189a3e1ddad9bc6646e02e64d6e308f5acbb1533ac430d (5Fbgc2V5...),
+            execution_type: MultiTran {
+                caller: 5c55177d67b064bb5d189a3e1ddad9bc6646e02e64d6e308f5acbb1533ac430d (5E9mYH6j...),
+                to: 3c55177d67b064bb5d189a3e1ddad9bc6646e02e64d6e308f5acbb1533ac430d (5DRp1QQY...),
                 amount: 500000,
+                asset: Asset(
+                    Polkadot,
+                ),
             },
             state: Submitted,
         },
