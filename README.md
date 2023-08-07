@@ -6,25 +6,26 @@
 
 ### Extrinsics supported
 
-    ```rust
-    pub fn generate_side_effects_steps(
-                origin: OriginFor<T>,
-                encoded_bytes: Vec<u8>,
+```rust
+pub fn generate_side_effects_steps(
+            origin: OriginFor<T>,
+            encoded_bytes: Vec<u8>,
+) -> DispatchResult 
+
+pub fn commit(
+        origin: OriginFor<T>,
+        actor_id: T::ActorId,
+        execution_id: T::ExecutionId,
+        number_of_steps: u32,
     ) -> DispatchResult 
 
-    pub fn commit(
-            origin: OriginFor<T>,
-            actor_id: T::ActorId,
-            execution_id: T::ExecutionId,
-            number_of_steps: u32,
-        ) -> DispatchResult 
+pub fn revert(
+        origin: OriginFor<T>,
+        actor_id: T::ActorId,
+        execution_id: T::ExecutionId,
+    ) -> DispatchResult
+```
 
-    pub fn revert(
-            origin: OriginFor<T>,
-            actor_id: T::ActorId,
-            execution_id: T::ExecutionId,
-        ) -> DispatchResult
-    ```
 ### An example of input/output for `generate_side_effects_steps` extrinsic
 
     Input bytes --> 
