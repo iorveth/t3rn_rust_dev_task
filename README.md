@@ -6,7 +6,7 @@
 
 ### Extrinsics supported
 
-    ``````rust
+    ```rust
     pub fn generate_side_effects_steps(
                 origin: OriginFor<T>,
                 encoded_bytes: Vec<u8>,
@@ -24,7 +24,7 @@
             actor_id: T::ActorId,
             execution_id: T::ExecutionId,
         ) -> DispatchResult
-    ``````
+    ```
 ### An example of input/output for `generate_side_effects_steps` extrinsic
 
     Input bytes --> 
