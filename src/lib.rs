@@ -342,10 +342,7 @@ pub mod pallet {
 		fn to_volatile_side_effect(
 			side_effect_parameters_bytes: Vec<Vec<u8>>,
 		) -> Result<SideEffectType, sp_runtime::DispatchError> {
-			log::info!(
-				"Side effect parameters length is  {:?}",
-				side_effect_parameters_bytes.len()
-			);
+
 			log::info!("\n Side effect parameters bytes {:?}", side_effect_parameters_bytes);
 
 			// Ensure numbers of parameters in side effect is valid
