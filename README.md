@@ -1,3 +1,5 @@
+# A pallet, that would take a series of encoded bytes and convert them to volatile side effects for further interactions
+
 1. Build pallet -> `cargo build`
 2. Run the test script -> `cargo test`
 3. Run the test script with the logging enabled `RUST_LOG=info cargo t -- --nocapture`
