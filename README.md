@@ -7,11 +7,13 @@
 ### Extrinsics supported
 
 ```rust
+/// Generate volatile side effects steps from encoded bytes provided
 pub fn generate_side_effects_steps(
             origin: OriginFor<T>,
             encoded_bytes: Vec<u8>,
 ) -> DispatchResult 
 
+/// Commit a number of side effects steps under given execution id
 pub fn commit(
         origin: OriginFor<T>,
         actor_id: T::ActorId,
@@ -19,6 +21,7 @@ pub fn commit(
         number_of_steps: u32,
     ) -> DispatchResult 
 
+/// Revert side effects under given execution id
 pub fn revert(
         origin: OriginFor<T>,
         actor_id: T::ActorId,

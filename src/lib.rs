@@ -142,7 +142,7 @@ pub mod pallet {
     // Dispatchable functions must be annotated with a weight and must return a DispatchResult.
     #[pallet::call]
     impl<T: Config> Pallet<T> {
-        /// Generate side effects steps from encoded bytes provided
+        /// Generate volatile side effects steps from encoded bytes provided
         #[pallet::call_index(0)]
         #[pallet::weight(0)]
         pub fn generate_side_effects_steps(
