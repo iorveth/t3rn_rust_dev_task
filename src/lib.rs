@@ -264,7 +264,7 @@ pub mod pallet {
             Ok(())
         }
 
-        /// Revert side effects under given execution id
+        /// Revert commited side effects under given execution id
         #[pallet::call_index(2)]
         #[pallet::weight(0)]
         pub fn revert(

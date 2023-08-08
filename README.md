@@ -21,7 +21,7 @@ pub fn commit(
         number_of_steps: u32,
     ) -> DispatchResult 
 
-/// Revert side effects under given execution id
+/// Revert commited side effects under given execution id
 pub fn revert(
         origin: OriginFor<T>,
         actor_id: T::ActorId,
